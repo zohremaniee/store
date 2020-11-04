@@ -113,11 +113,17 @@ img {
 
 header {
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
     width: auto;
     height: 180px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
-    /* position: fixed; */
-    z-index: 100;
+    box-sizing: border-box;
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    align-items: center;
 }
 
 .logo {
@@ -131,6 +137,7 @@ header {
 }
 
 #logo-2 {
+    color: #555;
     left: 100px;
     position: relative;
     float: left;
@@ -162,14 +169,14 @@ header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
     /* border: .5px solid #fff; */
     /* align-items: center; */
-    /* position: relative; */
-    /* top: 180px; */
+    position: relative;
+    top: 180px;
 }
 
 .foooter {
     height: auto;
     display: flex;
-    /* margin-top: 15%; */
+    top: 200px;
     background-color: #fff;
     position: relative;
 }
@@ -202,9 +209,13 @@ header {
     }
 }
 
-@media only screen and (max-width:595px) {
-    header {}
-}
+
+/* ==================== */
+
+@media only screen and (max-width:595px) {}
+
+
+/* ======================= */
 
 @media only screen and (max-width:375px) {
     #shadow-root {
