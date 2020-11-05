@@ -132,6 +132,7 @@ header {
     font-weight: normal;
     width: 250px;
     margin: 50px 30px;
+    position: relative;
 }
 
 #logo-2 {
@@ -148,12 +149,13 @@ header {
     overflow: hidden;
     position: relative;
     right: 90px;
+    bottom: 20px;
 }
 
 .btn-header {
     position: relative;
     letter-spacing: 10px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     bottom: 70px;
 }
 
@@ -184,33 +186,36 @@ header {
     Responsive
 =================== */
 
+@media only screen and (max-width:1200px) {
+    #footer-img {
+        top: -50px;
+        /* display: none; */
+    }
+    .card-group {
+        /* height: 100%;
+        overflow: scroll; */
+    }
+}
+
+
+/* =================== */
+
 @media only screen and (max-width:767px) {
     p,
     span {
         font-size: 12px;
     }
-    #shadow-root {
-        width: 100%;
+    .form-control {
+        width: 80px;
     }
     #btn-address {
-        bottom: 40px;
-    }
-    #col {
-        margin-right: 5rem;
-        flex-direction: row-reverse;
-    }
-    .col {
-        width: 100%;
-    }
-    .card-3 {
-        left: 3.5rem;
+        top: -70px;
     }
     .btn {
         font-size: .75rem;
     }
-    .footer {
-        position: relative;
-        top: 350px;
+    #card-footer {
+        top: 0;
     }
 }
 
@@ -218,20 +223,163 @@ header {
 /* ==================== */
 
 @media only screen and (max-width:590px) {
+    .profile-icon {
+        bottom: 60px;
+        display: none;
+    }
+    .btn-header {
+        margin-left: 30px;
+    }
+    #logo-2 {
+        /* right: 30px; */
+        right: -50px;
+    }
+    .form-control {
+        font-size: 12px;
+    }
+    .logo {
+        /* left: 90px; */
+        left: 10px;
+    }
     header {
         display: table-cell;
     }
 }
 
 
-/* ======================= */
+/* =========================== */
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:530px) {
+    .logo {
+        left: 100px;
+    }
+    #logo-2 {
+        right: 10px;
+    }
+}
+
+
+/* ============================ */
+
+@media only screen and (max-width:515px) {
+    .btn-header {
+        margin-left: -10px;
+    }
+    #btn-right {
+        left: 10px;
+    }
+}
+
+
+/* ============================== */
+
+@media only screen and (max-width:470px) {
     #shadow-root {
-        margin: 0;
-        flex-direction: row-reverse;
+        text-align: center;
+        flex-direction: column;
     }
-    #colgroup {
+    #btn-address {
+        bottom: 80px;
+        right: 10px;
+        display: none;
+    }
+    #list-group-item {
+        display: none;
+    }
+    #social {
+        display: inline-table;
+        /* top: 15rem; */
+        position: relative;
+        /* text-align: center; */
+        right: 220px;
+    }
+    #list-group-item {
+        left: 140px;
+        position: relative;
+    }
+    #list-address {
+        left: 270px;
+        position: relative;
+    }
+    #footer-img {
+        display: contents;
+    }
+}
+
+
+/* ========================== */
+
+@media only screen and (max-width:466px) {
+    .container-fluid {
+        margin-bottom: 100px;
+    }
+    .btn-header {
+        bottom: 180px;
+        right: -30px
+    }
+    #btn-right {
+        left: 30px;
+    }
+    #input-search {
+        position: relative;
+        bottom: 60px;
+    }
+    /* .btn-address {
+        font: smaller;
+    } */
+}
+
+
+/* ===================== */
+
+@media only screen and (max-width:450px) {
+    .logo {
+        left: 0;
+        bottom: 35px;
+    }
+    .btn-address {
+        right: -100px;
+    }
+    .btn-header {
+        right: -100px;
+    }
+}
+
+
+/* =================================  */
+
+@media only screen and (max-width:400px) {
+    .logo {
+        bottom: 30px;
+        left: -20px;
+    }
+    #logo-2 {
+        right: 60px;
+    }
+    #btn-search {
+        bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+
+/* ============================== */
+
+@media only screen and (max-width:376px) {
+    .logo {
+        left: 20px;
+    }
+    .btn-header {
+        right: -70px;
+    }
+    #logo-2 {
+        right: 40px;
+    }
+    #shadow-root {
+        display: block;
+        overflow: scroll;
+    }
+    /* #colgroup {
         display: inline;
-    }
+    } */
 }
