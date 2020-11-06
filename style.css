@@ -214,6 +214,10 @@ header {
     .btn {
         font-size: .75rem;
     }
+    #col {
+        right: 70px;
+        top: 10px;
+    }
     #card-footer {
         top: 0;
     }
@@ -288,9 +292,7 @@ header {
     }
     #social {
         display: inline-table;
-        /* top: 15rem; */
         position: relative;
-        /* text-align: center; */
         right: 220px;
     }
     #list-group-item {
@@ -382,4 +384,17 @@ header {
     /* #colgroup {
         display: inline;
     } */
+}
+
+
+/* ============================= */
+
+@media only screen and (max-width:360px) {
+    #social {
+        right: 180px;
+    }
+    #list-group-item {
+        left: 20px;
+        position: relative;
+    }
 }
