@@ -17,8 +17,9 @@
 }
 
 
-/*
-    General
+/*===================
+        General
+    ================
 */
 
 * {
@@ -396,5 +397,8 @@ header {
     #list-group-item {
         left: 20px;
         position: relative;
+    }
+    .small {
+        font-size: 14px;
     }
 }
