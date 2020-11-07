@@ -199,6 +199,15 @@ header {
 }
 
 
+/* ========================= */
+
+@media only screen and (max-width:992px) {
+    .card-group {
+        height: 70r%;
+    }
+}
+
+
 /* =================== */
 
 @media only screen and (max-width:767px) {
