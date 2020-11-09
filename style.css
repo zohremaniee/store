@@ -30,7 +30,7 @@
 }
 
 html {
-    color: #fff;
+    color: #e2e2e2;
 }
 
 a {
@@ -195,6 +195,9 @@ header {
     .card-group {
         /* height: 100%;
         overflow: scroll; */
+    }
+    #Middle-card {
+        font-size: 14px;
     }
 }
 
@@ -409,5 +412,8 @@ header {
     }
     .small {
         font-size: 14px;
+    }
+    #Middle-card {
+        font-size: 10px;
     }
 }
